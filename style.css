@@ -104,3 +104,18 @@ section {
 .layer1 {
   background-image: url('./layered-waves-haikei.svg');
 }
+.layer2 {
+  background-image: url('./layered-waves-haikei-2.svg');
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+.blob-motion {
+  position: absolute;
+  transform: translateY(-20%);
+  z-index: 0;
+}
+.blob-content {
+  z-index: 1;
+}
