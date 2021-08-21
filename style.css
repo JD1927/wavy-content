@@ -1,3 +1,28 @@
-* {
+body {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #202731;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 100px 20vw;
+}
+
+.blue {
+  background-color: #3c31dd;
+}
+.red {
+  background-color: #dd3f31;
+}
+.pink {
+  background-color: #ff0066;
+}
+.dark {
+  background-color: #0f0f10;
 }
