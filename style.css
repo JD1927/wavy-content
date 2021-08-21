@@ -27,6 +27,9 @@ section {
 .dark {
   background-color: #0f0f10;
 }
+.dark-wave {
+  background-color: #0f0f10;
+}
 
 .curve {
   position: absolute;
@@ -55,4 +58,49 @@ section {
   background-color: #3c31dd;
   transform: translate(-4%, 40%);
   z-index: -1;
+}
+
+.bubble::after {
+  content: '';
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  height: 85%;
+  width: 100%;
+  background-color: #0f0f10;
+  z-index: -1;
+}
+
+/* WAVE */
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 180px;
+}
+
+.wave .shape-fill {
+  fill: #0f0f10;
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url('./layered-waves-haikei.svg');
 }
